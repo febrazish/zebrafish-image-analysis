@@ -1,4 +1,4 @@
-# zebrafish-image-analysis
+Zebrafish image analysis
 
 This script requires ImageJ 1.53t (or later). Go to "Help > Update ImageJ..."
 to check your version and update if necessary.
