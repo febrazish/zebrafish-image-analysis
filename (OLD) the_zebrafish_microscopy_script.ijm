@@ -1,5 +1,13 @@
 // The zebrafish script
 
+// This is an old version of the fully automatic script. 
+// It cannot handle folders within folders. Also, it uses an
+// inefficient and annoying method to find the input folder.]:
+// it requires that the first image from the input folder is
+// opened in Fiji, which it uses to find the path to the folder.
+// The new versions of the script start with a pop-up dialog
+// window that asks you to select the input folder.
+
 // Performs automated batch analysis of fluorescence microscopy images.
 // Only processes images in .tif or .zvi format.
 // Requires ImageJ version 1.53t and the "ResultsToExcel" plugin.
