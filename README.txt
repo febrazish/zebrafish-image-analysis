@@ -12,6 +12,12 @@ Find the "ResultsToExcel" plugin and check the box to activate it.
 Close the plugin list, go back to the updater menu, and click "Apply changes".
 Restart Fiji to complete the installation.
 
+Alternatively, a .jar file containing the entire ReadAndWriteExcel plugin
+(freely available under the Apache License Version 2.0) can be downloaded
+from the zebrafish-image-analysis GitHub repository.
+Just place the Read_and_Write_Excel-1.1.7.jar file in the plugins folder 
+of the Fiji.app directory and it should work right away.
+
 For the script to work, all input images should be in one folder.
 Your input folder should contain only zvi or tif image files.
 
