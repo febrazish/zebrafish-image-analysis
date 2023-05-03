@@ -18,27 +18,31 @@ from the zebrafish-image-analysis GitHub repository.
 Just place the Read_and_Write_Excel-1.1.7.jar file in the plugins folder 
 of the Fiji.app directory and it should work right away.
 
-For the script to work, all input images should be in one folder.
-Your input folder should contain only zvi or tif image files.
+The script works best when all input images are together in one folder.
+Only tif/tiff files and zvi files will be analyzed, other file formats
+will be skipped.
 
-A new folder (Combined_script_output) will be created in the user's
-"home directory" (C:\Users\your_username on Windows systems). Within
-Combined_script_output, a sub-folder is created for every new image that is
-being analyzed. ROIs, histograms, and processed images are stored there.
+The script starts by asking you to select your input folder, and after
+that also your preferred output folder (you can also choose to create a
+new output folder at thus point). Within the selected output folder,
+a sub-folder will be created for every new image that is being analyzed.
+ROIs, histograms, and processed images will be stored there.
 
-The Excel plugin will create one Excel file called "zebrafish_script.xlsx"
-in the general output folder. Measurement results are automatically saved here.
+The Excel plugin creates an Excel file within the output folder that you selected.
+Another pop-up windows will appear asking you to name this Excel file. Measurements
+and counts will automatically be saved in this one Excel file.
 A minor issue: the plugin is a little unpredictable with the titles that it puts
-in the first row of each Excel sheet, but the measurement data is always saved
-in the correct sheet and in the correct order. The images in the input folder
-are analyzed in alphabetical order, so the results will also be in that order.
+in the first row of each Excel sheet, but the measurements are always saved
+in separate sheets that are named to indicate what type of measurement it is.
+The images in the input folder are analyzed in alphabetical order, so the results
+will also be in that order. The sheet called "Particles" will contain the indexed
+list of file names that have been processed.
 
 RUNNING THE SCRIPT
 1. On your PC, find Fiji's folder (probably: YOUR PC\users\fiji-win64\Fiji.app)
 2. Put the .ijm script file in the macros sub-folder.
 3. Open Fiji and install the macro (Plugins > Macros > Install).
-4. Open the first image from your input folder as you normally would.
-5. Run the macro (Plugins > Macros > zebrafish_macro).
+4. Run the macro (Plugins > Macros > zebrafish_macro).
 Everything else should happen automatically.
 
 
